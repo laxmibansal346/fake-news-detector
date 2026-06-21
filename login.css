@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+    background-image: url('newspaper.PNG');
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    width: 330px;
+   
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+p {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    color: #1a1a1a;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #667eea;
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #201b1b 0%, #000000 100%);
+    color: white;
+    border: none;
+border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.switch-text {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin-top: 20px;
+}
+
+.switch-text a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+#auth-result {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}

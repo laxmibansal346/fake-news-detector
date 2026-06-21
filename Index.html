@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="user-info">
+    <div id="profile-circle" onclick="window.location.href='/profile.html'">
+        <span id="profile-initial"></span>
+    </div>
+    </div>
+        <h1>Fake News Detector</h1>
+        <p>Paste any news headline below and let AI analyze it for you.</p>
+        <p style="font-size: 12px; color: #999; margin-top: -15px;">Note: This tool uses AI knowledge up to 2024. For latest news please verify from trusted sources.</p>
+        <textarea id="news-input" placeholder="e.g. PM Modi announces free education for all students..."></textarea>
+        <button id="detect-btn">Analyze</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const token = localStorage.getItem('token');
+        if(!token) {
+            window.location.href = '/login.html';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
