@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 app.use(cors());
