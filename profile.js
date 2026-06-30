@@ -10,7 +10,7 @@ document.getElementById('profile-name').innerText = name;
 document.querySelector('.avatar').innerText = name ? name.charAt(0).toUpperCase() : 'U';
 
 // Fetch profile data from server
-fetch('http://localhost:3000/profile', {
+fetch('/profile', {
     method: 'GET',
     headers: {
         'Authorization': `Bearer ${token}`
