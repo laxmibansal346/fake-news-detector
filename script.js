@@ -23,7 +23,7 @@ detectBtn.addEventListener('click', async () => {
     result.innerText = 'Analyzing... Please wait.';
 
     try {
-        const response = await fetch('http://localhost:3000/detect', {
+        const response = await fetch('/detect', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
